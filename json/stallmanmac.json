@@ -1,5 +1,50 @@
 {
-	"run_list": [
-  		"recipe[homebrew]"
-	]
+    "run_list": [
+        "recipe[homebrew::install_formulas]", 
+        "recipe[homebrew::install_casks]"
+    ], 
+    "homebrew": {
+        "formulas": [
+            "wget", 
+            "tree", 
+            "go", 
+            "hg", 
+            "bazaar", 
+            "ssh-copy-id", 
+            "cmake", 
+            "ctags", 
+            "lftp", 
+            "graphviz", 
+            "packer"
+        ], 
+        "casks": [
+            "vmware-fusion", 
+            "hipchat", 
+            "iterm2", 
+            "skype", 
+            "google-chrome-dev", 
+            "appcleaner", 
+            "alfred", 
+            "baiduinput", 
+            "phpstorm", 
+            "qq", 
+            "betterzip", 
+            "cyberduck", 
+            "icefloor", 
+            "intellij-idea", 
+            "intellij-idea-ce", 
+            "rubymine", 
+            "sublime3", 
+            "gnuhub-rdc", 
+            "filezilla", 
+            "mysqlworkbench", 
+            "firefox-beta", 
+            "wiznote", 
+            "android-studio", 
+            "sametime", 
+            "ibm-notes", 
+            "ibm-internal-certificates", 
+            "ibm-mobility-client"
+        ]
+    }
 }

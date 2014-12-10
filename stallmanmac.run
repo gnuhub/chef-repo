@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chef-client --local-mode -j json/stallmanmac.json -l debug
